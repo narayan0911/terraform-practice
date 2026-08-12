@@ -1,0 +1,9 @@
+variable "rgs" {}
+variable "vnets" {}
+variable "pips" {}
+variable "nsgs" {}
+variable "kvs" {}
+variable "appgws" {}
+variable "subnets" {}
+variable "vms" {}
+variable "bastions" {}
