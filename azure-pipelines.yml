@@ -38,6 +38,13 @@ steps:
       command: 'validate'
       workingDirectory: '$(System.DefaultWorkingDirectory)/environment/dev'
 
+  - task: TerraformTask@5
+    inputs:
+      provider: 'azurerm'
+      command: 'plan'
+      workingDirectory: '$(System.DefaultWorkingDirectory)/environment/dev'
+      environmentServiceNameAzureRM: 'narayanServiceConnection'
+
 
 
 
